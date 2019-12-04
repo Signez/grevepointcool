@@ -50,7 +50,7 @@
         }
 
         details section {
-            margin-left: 25px;
+            margin-left: 20px;
         }
 
         footer {
@@ -64,6 +64,36 @@
         footer a:visited {
             color: inherit;
         }
+
+        /* Colors */
+
+        h1 strong, summary strong {
+            position: relative;
+        }
+
+        h1 strong::before, summary strong::before {
+            content: "";
+            background: #FFE70F;
+            height: 0.2em;
+            width: 100%;
+            position: absolute;
+            bottom: 0.12em;
+            z-index: -1;
+        }
+
+        h1 > strong::before { background-color: #0FF1FF; }
+        summary strong::before {
+            bottom: 0;
+            height: 0.3em;
+            background: #91FF9C;
+        }
+
+        details:nth-of-type(6n) summary strong::before { background: #FFCC91; }
+        details:nth-of-type(6n + 1) summary strong::before { background: #D5FF91; }
+        details:nth-of-type(6n + 2) summary strong::before { background: #91FF9C; }
+        details:nth-of-type(6n + 3) summary strong::before { background: #ECA2FF; }
+        details:nth-of-type(6n + 4) summary strong::before { background: #FFA2A2; }
+        details:nth-of-type(6n + 5) summary strong::before { background: #FDDA7F; }
     </style>
 </head>
 
