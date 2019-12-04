@@ -115,11 +115,26 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        /* Smile */
+        .cool::after {
+            content: "";
+            display: block;
+            width: 43%;
+            left: 34%;
+            background-size: contain;
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='65' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 3c11 23 44 23 55 0' stroke='%23000' stroke-width='11'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            bottom: -23%;
+            height: 50%;
+            background-position: bottom center;
+        }
     </style>
 </head>
 
 <body>
-    <h1><span>La <strong>grève</strong>,</span> c’est <strong>cool</strong>.</h1>
+    <h1><span>La <strong>grève</strong>,</span> c’est <strong class="cool">cool</strong>.</h1>
 
     <details>
         <summary><strong>Pourquoi</strong> c’est la grève ?</summary>
@@ -144,7 +159,7 @@
         <summary><strong>Est-ce que je peux</strong> faire grève aussi ?</summary>
 
         <section>
-            <p>Bien sûr ! Sauf de très rares exceptions*, tu peux faire grève, et c’est assez facile.</p>
+            <p>Bien sûr ! Sauf de très rares exceptions, tu peux faire grève, et c’est assez facile.</p>
 
             <p>Pour le faire, il faut :
             </p>
@@ -157,7 +172,7 @@
                     Quand on te demandera de justifier ton absence, tu devras simplement dire que tu étais en grève ;
                 </li>
                 <li>
-                    Pour cette grève*, c’est tout !
+                    Pour cette grève-ci, c’est tout !
                 </li>
             </ul>
 
