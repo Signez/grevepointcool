@@ -94,6 +94,23 @@
         details:nth-of-type(6n + 3) summary strong::before { background: #ECA2FF; }
         details:nth-of-type(6n + 4) summary strong::before { background: #FFA2A2; }
         details:nth-of-type(6n + 5) summary strong::before { background: #FDDA7F; }
+
+        #legal { display: none; }
+        #legal:target { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.2); }
+
+        #legal:target .dialog {
+            display: block;
+            position: absolute;
+            background: white;
+            width: 100%;
+            max-width: 600px;
+            padding: 80px;
+            top: 0;
+            box-sizing: border-box;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 
@@ -260,9 +277,22 @@
     <footer>
         <a href="https://greve.cool/">greve.cool</a> – Une page garantie sans trackers – Créée par quelques développeurs
         qui avaient envie d’expliquer à leurs amis pourquoi ils faisaient grève le 5 décembre 2019, et comment ça
-        marche.
+        marche. – <a href="#legal">Mentions légales</a>
     </footer>
 
+    <div id="legal">
+        <div class="dialog">
+            <p>
+            Ce site internet personnel, réalisé par un particulier et sans lien avec des représentations syndicales,
+            est hébergé par l’entreprise o2switch SARL, 222-224 Boulevard Gustave Flaubert,
+            63000 Clermont-Ferrand.
+            </p>
+            <p>
+                Il ne pose pas de cookies, ni utilise vos données personnelles.
+                <small>(<a href="#">fermer</a>)</small>
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
