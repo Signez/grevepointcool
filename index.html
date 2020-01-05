@@ -40,26 +40,33 @@
 
         h1,
         details,
-        nav,
         footer {
             margin-left: 140px;
             max-width: 600px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        .cta {
+	        border: 2px solid #1e3799;
+  		    border-radius: 5px;
+          color: #1e3799;
+          display: inline-block;
+          font-size: 20px;
+          margin-left: 140px;
+  		    text-decoration: none;
+  		    padding: .4rem .5rem;
+          transition: background-color, ease-in-out, .2s;
         }
 
-        nav ul li {
-	        display: inline;
+        .cta:hover,
+        .cta:focus {
+          background-color: #1e3799;
+          color: #fff;
         }
 
-        nav ul li a {
-	        border: 1px solid;
-		    border-radius: 5px;
-		    text-decoration: none;
-		    padding: 0.2rem 0.5rem;
+        @media screen and (max-width: 375px) {
+          .cta {
+            font-size: 18px;
+          }
         }
 
         summary:hover {
@@ -84,7 +91,7 @@
 
             h1,
             details,
-            nav,
+            .cta,
             footer {
                 margin-left: 5px;
             }
@@ -244,9 +251,9 @@
             </p>
 
             <p>
-                <strong>Je suis précaire, qu’est ce que je risque ?</strong> Même avec un contrat court ou en période d'essai, 
-                tu as le droit de faire grève comme tout le monde. Par contre, les employeurs ont plus de moyens pour réprimer 
-                les salarié·e·s qui se mobilisent, par exemple en ne renouvellant pas leurs contrats. Il faut donc être prudent 
+                <strong>Je suis précaire, qu’est ce que je risque ?</strong> Même avec un contrat court ou en période d'essai,
+                tu as le droit de faire grève comme tout le monde. Par contre, les employeurs ont plus de moyens pour réprimer
+                les salarié·e·s qui se mobilisent, par exemple en ne renouvellant pas leurs contrats. Il faut donc être prudent
                 et prendre contact avec un syndicat au moindre problème.
             </p>
         </section>
@@ -269,8 +276,8 @@
 
         <section>
             <p>
-                Évidemment. Les syndicats sont un outil à notre service, ils nous permettent de nous organiser 
-                collectivement pour défendre nos droits, mais il est tout à fait possible d’être en grève sans avoir 
+                Évidemment. Les syndicats sont un outil à notre service, ils nous permettent de nous organiser
+                collectivement pour défendre nos droits, mais il est tout à fait possible d’être en grève sans avoir
                 de lien avec un syndicat ou si il n’y a pas de syndicat dans son entreprise ou son administration.
             </p>
         </section>
@@ -339,13 +346,7 @@
         </section>
     </details>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="https://www.lepotcommun.fr/pot/solidarite-financiere">Je participe à la caisse de grève !</a>
-            </li>
-        </ul>
-    </nav>
+    <a class="cta" href="https://www.lepotcommun.fr/pot/solidarite-financiere">Je participe à la caisse de grève !</a>
 
     <footer>
         <p>
