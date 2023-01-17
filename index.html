@@ -123,33 +123,32 @@
 
         /* Colors */
 
-        h1 strong, summary strong {
+        h1 strong {
             position: relative;
         }
 
-        h1 strong::before, summary strong::before {
-            content: "";
-            background: #FFE70F;
-            height: 0.2em;
-            width: 100%;
-            position: absolute;
-            bottom: 0.12em;
-            z-index: -1;
+        h1 strong, summary strong {
+            text-decoration-skip-ink: none;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-color: #FFE70F;
+            text-decoration-thickness: 0.2em;
+            text-underline-offset: -0.1em;
         }
 
-        h1 > strong::before { background-color: #0FF1FF; }
-        summary strong::before {
-            bottom: 0;
-            height: 0.3em;
-            background: #91FF9C;
+        h1 > strong { text-decoration-color: #0FF1FF; }
+        summary strong {
+            text-decoration-thickness: 0.3em;
+            text-underline-offset: -0.08em;
+            text-decoration-color: #91FF9C;
         }
 
-        details:nth-of-type(6n) summary strong::before { background: #FFCC91; }
-        details:nth-of-type(6n + 1) summary strong::before { background: #D5FF91; }
-        details:nth-of-type(6n + 2) summary strong::before { background: #91FF9C; }
-        details:nth-of-type(6n + 3) summary strong::before { background: #ECA2FF; }
-        details:nth-of-type(6n + 4) summary strong::before { background: #FFA2A2; }
-        details:nth-of-type(6n + 5) summary strong::before { background: #FDDA7F; }
+        details:nth-of-type(6n) summary strong { text-decoration-color: #FFCC91; }
+        details:nth-of-type(6n + 1) summary strong { text-decoration-color: #D5FF91; }
+        details:nth-of-type(6n + 2) summary strong { text-decoration-color: #91FF9C; }
+        details:nth-of-type(6n + 3) summary strong { text-decoration-color: #ECA2FF; }
+        details:nth-of-type(6n + 4) summary strong { text-decoration-color: #FFA2A2; }
+        details:nth-of-type(6n + 5) summary strong { text-decoration-color: #FDDA7F; }
 
         #legal { display: none; }
         #legal:target { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.2); }
