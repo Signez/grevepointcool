@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="plex-font/plex-font.css" />
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Pourquoi c’est la grève ? Comment s’informer et participer ? Toutes les infos utiles sont à retrouver sur greve.cool">
+    <meta name="twitter:description"
+        content="Pourquoi c’est la grève ? Comment s’informer et participer ? Toutes les infos utiles sont à retrouver sur greve.cool">
     <meta name="twitter:title" content="La grève, c’est cool.">
     <meta name="twitter:image" content="https://greve.cool/assets/twitter_card.png">
     <style>
@@ -46,33 +47,33 @@
         }
 
         .cta {
-	        border: 2px solid #1e3799;
-  		    border-radius: 5px;
+            border: 2px solid #1e3799;
+            border-radius: 5px;
             color: #1e3799;
             display: inline-block;
             font-size: 20px;
             margin-left: 140px;
-  		    text-decoration: none;
-  		    padding: .4rem .5rem;
+            text-decoration: none;
+            padding: .4rem .5rem;
             transition: background-color ease-in-out .2s;
         }
 
         .cta:hover,
         .cta:focus {
-          background-color: #1e3799;
-          color: #fff;
+            background-color: #1e3799;
+            color: #fff;
         }
 
         @media screen and (max-width: 375px) {
-          .cta {
-            font-size: 18px;
-          }
+            .cta {
+                font-size: 18px;
+            }
         }
 
         summary:hover {
             cursor: pointer;
             text-decoration: underline;
-            text-decoration-color: rgba(0,0,0,0.7);
+            text-decoration-color: rgba(0, 0, 0, 0.7);
         }
 
         details {
@@ -101,7 +102,8 @@
             margin-left: 20px;
         }
 
-        p, ul {
+        p,
+        ul {
             line-height: 1.5;
         }
 
@@ -127,7 +129,8 @@
             position: relative;
         }
 
-        h1 strong, summary strong {
+        h1 strong,
+        summary strong {
             text-decoration-skip-ink: none;
             text-decoration-line: underline;
             text-decoration-style: solid;
@@ -136,22 +139,53 @@
             text-underline-offset: -0.1em;
         }
 
-        h1 > strong { text-decoration-color: #0FF1FF; }
+        h1>strong {
+            text-decoration-color: #0FF1FF;
+        }
+
         summary strong {
             text-decoration-thickness: 0.3em;
             text-underline-offset: -0.08em;
             text-decoration-color: #91FF9C;
         }
 
-        details:nth-of-type(6n) summary strong { text-decoration-color: #FFCC91; }
-        details:nth-of-type(6n + 1) summary strong { text-decoration-color: #D5FF91; }
-        details:nth-of-type(6n + 2) summary strong { text-decoration-color: #91FF9C; }
-        details:nth-of-type(6n + 3) summary strong { text-decoration-color: #ECA2FF; }
-        details:nth-of-type(6n + 4) summary strong { text-decoration-color: #FFA2A2; }
-        details:nth-of-type(6n + 5) summary strong { text-decoration-color: #FDDA7F; }
+        details:nth-of-type(6n) summary strong {
+            text-decoration-color: #FFCC91;
+        }
 
-        #legal { display: none; }
-        #legal:target { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0,0,0,0.2); }
+        details:nth-of-type(6n + 1) summary strong {
+            text-decoration-color: #D5FF91;
+        }
+
+        details:nth-of-type(6n + 2) summary strong {
+            text-decoration-color: #91FF9C;
+        }
+
+        details:nth-of-type(6n + 3) summary strong {
+            text-decoration-color: #ECA2FF;
+        }
+
+        details:nth-of-type(6n + 4) summary strong {
+            text-decoration-color: #FFA2A2;
+        }
+
+        details:nth-of-type(6n + 5) summary strong {
+            text-decoration-color: #FDDA7F;
+        }
+
+        #legal {
+            display: none;
+        }
+
+        #legal:target {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
 
         #legal:target .dialog {
             display: block;
@@ -181,6 +215,7 @@
             height: 50%;
             background-position: bottom center;
         }
+
     </style>
 </head>
 
@@ -192,17 +227,22 @@
 
         <section>
             <p>
-                Les syndicats <a href="https://solidaires.org/media/documents/Communique_unitaire_du_21_f%C3%A9vrier_2023.pdf">appellent à la grève</a>
-                le mardi 7 mars 2023 pour lutter contre la réforme des retraites présentée par le gouvernement qui reporterait l’âge légal de
-                départ à la retraite à 64 ans, ainsi qu’un allongement accéléré de la durée de cotisation.
+                Les syndicats <a
+                    href="https://solidaires.org/media/documents/Communique_unitaire_du_21_f%C3%A9vrier_2023.pdf">appellent
+                    à la grève</a> le mardi 7 mars 2023 pour lutter contre la réforme des retraites qui reporterait
+                l’âge légal de départ à la retraite à 64 ans, ainsi qu’un allongement accéléré de la durée de
+                cotisation.
             </p>
             <p>
-                Les syndicats dénoncent des mesures injustifiées alors qu’il n’y a aucune urgence financière
-                et que d’autres solutions de financement sont possibles.
+                Les syndicats <a
+                    href="https://solidaires.org/media/documents/communiqu%C3%A9_8_mars_intersyndical_DEF.pdf">appelent
+                    également à se mobiliser le lendemain</a>, lors de la journée mondiale de lutte pour les droits des
+                femmes du 8 mars, pour dénoncer notamment les injustices que cette réforme porte sur les femmes.
             </p>
             <p>
-                Pour en savoir plus sur cette réforme des retraites, tu peux visiter le site de la plateforme
-                <a href="https://64anscestnon.org/s-informer-sur-la-reforme-des-retraites/">64anscestnon.org</a>.
+                Renseigne-toi sur les détails de cette réforme considérée par les syndicats comme injuste et
+                injustifiée sur <a href="https://64anscestnon.org/s-informer-sur-la-reforme-des-retraites/">
+                    64anscestnon.org</a>.
             </p>
         </section>
     </details>
@@ -215,8 +255,8 @@
 
             <ul>
                 <li>
-                    Il faut simplement que tu ne travailles pas (du tout), sur un temps continu : tu peux faire grève une heure, une
-                    demi-journée ou un jour ;
+                    Il faut simplement que tu ne travailles pas (du tout), sur un temps continu : tu peux faire grève
+                    une heure, une demi-journée ou un jour ;
                 </li>
                 <li>
                     Quand on te demandera de justifier ton absence, tu devras seulement dire que tu étais en grève ;
@@ -229,9 +269,8 @@
             <p>
                 La grève est un droit, en France, donc tu es protégé·e : il ne sera pas écrit sur ta fiche de paie que
                 tu étais en grève, et ton employeur n’a pas le droit de t’en tenir rigueur par ailleurs de quelque
-                manière que ce soit.
-                Tu ne seras simplement pas payé·e pour ce jour de grève – c’est logique, mais c’est bien de
-                le rappeler !
+                manière que ce soit. Tu ne seras simplement pas payé·e pour ce jour de grève – c’est logique, mais c’est
+                bien de le rappeler !
             </p>
 
             <p>
@@ -252,10 +291,10 @@
             </p>
 
             <p>
-                <strong>Je suis précaire, qu’est ce que je risque ?</strong> Même avec un contrat court ou en période d'essai,
-                tu as le droit de faire grève comme tout le monde. Par contre, les employeurs ont plus de moyens pour réprimer
-                les salarié·e·s qui se mobilisent, par exemple en ne renouvellant pas leurs contrats. Il faut donc être prudent
-                et prendre contact avec un syndicat au moindre problème.
+                <strong>Je suis précaire, qu’est ce que je risque ?</strong> Même avec un contrat court ou en période
+                d'essai, tu as le droit de faire grève comme tout le monde. Par contre, les employeurs ont plus de
+                moyens pour réprimer les salarié·e·s qui se mobilisent, par exemple en ne renouvellant pas leurs
+                contrats. Il faut donc être prudent et prendre contact avec un syndicat au moindre problème.
             </p>
         </section>
     </details>
@@ -295,23 +334,25 @@
 
             <p>
                 Si tu as l’impression que ça ne servira à rien car tu es seul·e, ou que vous n’êtes pas nombreux·se·s à
-                faire
-                grève dans ton entreprise ou ton administration, dis-toi que ça peut interroger certains de tes
-                collègues
-                qui se diront peut-être, la prochaine fois, qu’eux aussi, ils peuvent sauter le pas.
+                faire grève dans ton entreprise ou ton administration, dis-toi que ça peut interroger certains de tes
+                collègues qui se diront peut-être, la prochaine fois, qu’eux aussi, ils peuvent sauter le pas.
             </p>
 
             <p>
                 Si tu as l’impression que ça ne servira à rien au niveau national, détrompe-toi !
                 On a eu des exemples de grèves locales réussies ces dernières années
-                <small>(<a href="https://fr.wikipedia.org/wiki/Mobilisation_des_femmes_de_chambre_de_l%27h%C3%B4tel_Ibis_Batignolles">Ibis Les Batignolles</a>,
-                    <a href="https://www.liberation.fr/economie/social/greve-chez-grdf-la-cgt-et-la-direction-trouvent-un-accord-apres-six-semaines-de-conflit-20221220_66ZEHBC4GBEILJWJR7YSFD4K24/">GRDF</a>,
-                    <a href="https://www.lefigaro.fr/conjoncture/plateforme-geodis-a-gennevilliers-la-greve-levee-apres-un-accord-avec-la-direction-20221118">Geodis</a>)
+                <small>(aux <a
+                        href="https://fr.wikipedia.org/wiki/Mobilisation_des_femmes_de_chambre_de_l%27h%C3%B4tel_Ibis_Batignolles">Ibis
+                        Batignolles</a>,
+                    à <a
+                        href="https://www.liberation.fr/economie/social/greve-chez-grdf-la-cgt-et-la-direction-trouvent-un-accord-apres-six-semaines-de-conflit-20221220_66ZEHBC4GBEILJWJR7YSFD4K24/">GRDF</a>,
+                    à <a
+                        href="https://www.lefigaro.fr/conjoncture/plateforme-geodis-a-gennevilliers-la-greve-levee-apres-un-accord-avec-la-direction-20221118">Geodis</a>)
                 </small> et du côté des mobilisations nationales inter-professionnelles, la longue
                 grève fin 2019 a sans doute poussé l’exécutif à enterrer la précédente réforme des
                 retraites à l’occasion de la pandémie.
             </p>
-                
+
             <p>
                 Dans tous les cas, quel que soit le résultat de la mobilisation, ça aura permis à ta voix
                 d’être entendue, du fait que non, tu n’es pas d’accord avec ce qui se passe et que tu as
@@ -330,12 +371,11 @@
             </p>
             <p>
                 <strong>Tu ne peux pas faire grève ?</strong> Tout le monde ne peut pas forcément faire grève, que ça
-                soit pour des raisons
-                d’argent, de métiers réglementés ou d’autres situations. Si tu peux encourager les gens autour de toi
-                qui le font, leur dire que tu comprends leur démarche, que cette fois-ci tu ne contribues pas mais que tu
-                y penses pour les prochaines fois, c’est déjà un début. Si tu peux aussi partager des messages qui
-                encouragent à la grève, c’est cool aussi. Et un petit sourire pour les manifestant·e·s ou les personnels en
-                grève mais qui doivent travailler, c’est encore plus cool !<br />
+                soit pour des raisons d’argent, de métiers réglementés ou d’autres situations. Si tu peux encourager les
+                gens autour de toi qui le font, leur dire que tu comprends leur démarche, que cette fois-ci tu ne
+                contribues pas mais que tu y penses pour les prochaines fois, c’est déjà un début. Si tu peux aussi
+                partager des messages qui encouragent à la grève, c’est cool aussi. Et un petit sourire pour les
+                manifestant·e·s ou les personnels en grève mais qui doivent travailler, c’est encore plus cool !<br />
                 Si le mouvement continue, tu peux aussi mettre de l’argent dans les caisses de grève. Cela permet aux
                 travailleur·se·s en grève reconductible de tenir plus longtemps, leur donne confiance et augmente nos
                 chances de gagner.
@@ -343,22 +383,20 @@
 
             <p>
                 <strong>Tu fais grève ?</strong> Alors tu donnes déjà un coup de main ! Mais si tu veux, tu peux aussi
-                participer à une
-                manifestation, pour montrer le fait que tu n’es pas à ton poste de travail. Si personne de ton entourage
-                n’est habitué à manifester, que tu t’inquiètes de la répression policière, reste proche d’un grand
-                syndicat.
-                Ils sont habitués à ce que ça se passe bien et ils t’éviteront des situations délicates.
-                Tu peux aussi inviter d’autres personnes à faire grève, parler de la réforme des retraites dans ton
-                entourage ou participer à des Assemblées Générales.
+                participer à une manifestation, pour montrer le fait que tu n’es pas à ton poste de travail. Si personne
+                de ton entourage n’est habitué à manifester, que tu t’inquiètes de la répression policière, reste proche
+                d’un grand syndicat. Ils sont habitués à ce que ça se passe bien et ils t’éviteront des situations
+                délicates. Tu peux aussi inviter d’autres personnes à faire grève, parler de la réforme des retraites
+                dans ton entourage ou participer à des Assemblées Générales.
             </p>
         </section>
     </details>
 
     <footer>
         <p>
-            <a href="https://greve.cool/">greve.cool</a> – Une page garantie sans trackers – Créée par quelques personnes
-            qui avaient envie d’expliquer à leurs ami·e·s pourquoi elles faisaient grève, et comment ça marche. Dernière
-            mise à jour en janvier 2023. – <a href="#legal">Mentions légales</a>
+            <a href="https://greve.cool/">greve.cool</a> – Une page garantie sans trackers – Créée par quelques
+            personnes qui avaient envie d’expliquer à leurs ami·e·s pourquoi elles faisaient grève, et comment ça
+            marche. Dernière mise à jour en mars 2023. – <a href="#legal">Mentions légales</a>
         </p>
         <p>
             <a href="https://github.com/Signez/grevepointcool/blob/master/README.md">
@@ -370,9 +408,8 @@
     <div id="legal">
         <div class="dialog">
             <p>
-            Ce site internet personnel, réalisé par un particulier et sans lien avec des représentations syndicales,
-            est hébergé par l’entreprise o2switch SARL, 222-224 Boulevard Gustave Flaubert,
-            63000 Clermont-Ferrand.
+                Ce site internet personnel, réalisé par un particulier et sans lien avec des représentations syndicales,
+                est hébergé par l’entreprise o2switch SARL, 222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand.
             </p>
             <p>
                 Il ne pose pas de cookies, ni utilise vos données personnelles.
