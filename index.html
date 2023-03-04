@@ -60,6 +60,10 @@
             padding: 6px 8px 4px 0;
         }
 
+        .cta-title::after {
+            content: " →";
+        }
+
         .cta {
             display: inline-block;
             background-color: rgb(233, 238, 241);
@@ -106,9 +110,23 @@
 
             h1,
             details,
-            .cta,
+            .see-also,
             footer {
                 margin-left: 5px;
+            }
+
+            .see-also {
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            .cta-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .cta-title::after {
+                display: none;
             }
         }
 
@@ -419,7 +437,7 @@
     </details>
 
     <div class="see-also">
-        <span class="cta-title">Outils &rightarrow;</span>
+        <span class="cta-title">Outils</span>
         <a class="cta" href="https://nosretraites-simulateur-cas-types.netlify.app/">
             Simuler les effets sur ma retraite
         </a>
