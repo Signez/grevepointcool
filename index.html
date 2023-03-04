@@ -41,27 +41,41 @@
 
         h1,
         details,
-        footer {
+        footer,
+        .see-also {
             margin-left: 140px;
             max-width: 600px;
         }
 
+        .see-also {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 40px;
+        }
+
+        .cta-title {
+            color: grey;
+            font-size: 14px;
+            padding: 6px 8px 4px 0;
+        }
+
         .cta {
-            border: 2px solid #1e3799;
-            border-radius: 5px;
-            color: #1e3799;
             display: inline-block;
-            font-size: 20px;
-            margin-left: 140px;
+            background-color: rgb(233, 238, 241);
+            border-radius: 20px;
+            color: black;
+            display: inline-block;
+            font-size: 14px;
             text-decoration: none;
-            padding: .4rem .5rem;
-            transition: background-color ease-in-out .2s;
+            padding: 6px 16px 4px;
+            transition: background-color ease-in-out .2s, color ease-in-out .2s;
         }
 
         .cta:hover,
         .cta:focus {
-            background-color: #1e3799;
-            color: #fff;
+            background-color: #f8bb52;
+            background-color: var(--bg-hover-color);
         }
 
         @media screen and (max-width: 375px) {
@@ -112,7 +126,7 @@
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 40px;
             margin-bottom: 80px;
             color: dimgrey;
             font-size: 12px;
@@ -149,28 +163,40 @@
             text-decoration-color: #91FF9C;
         }
 
-        details:nth-of-type(6n) summary strong {
+        details:nth-of-type(6n) summary strong,
+        .see-also a:nth-of-type(6n) {
             text-decoration-color: #FFCC91;
+            --bg-hover-color: #FFCC91;
         }
 
-        details:nth-of-type(6n + 1) summary strong {
+        details:nth-of-type(6n + 1) summary strong,
+        .see-also a:nth-of-type(6n + 1) {
             text-decoration-color: #D5FF91;
+            --bg-hover-color: #D5FF91;
         }
 
-        details:nth-of-type(6n + 2) summary strong {
+        details:nth-of-type(6n + 2) summary strong,
+        .see-also a:nth-of-type(6n + 2) {
             text-decoration-color: #91FF9C;
+            --bg-hover-color: #91FF9C;
         }
 
-        details:nth-of-type(6n + 3) summary strong {
+        details:nth-of-type(6n + 3) summary strong,
+        .see-also a:nth-of-type(6n + 3) {
             text-decoration-color: #ECA2FF;
+            --bg-hover-color: #ECA2FF;
         }
 
-        details:nth-of-type(6n + 4) summary strong {
+        details:nth-of-type(6n + 4) summary strong,
+        .see-also a:nth-of-type(6n + 4) {
             text-decoration-color: #FFA2A2;
+            --bg-hover-color: #FFA2A2;
         }
 
-        details:nth-of-type(6n + 5) summary strong {
+        details:nth-of-type(6n + 5) summary strong,
+        .see-also a:nth-of-type(6n + 5) {
             text-decoration-color: #FDDA7F;
+            --bg-hover-color: #FDDA7F;
         }
 
         #legal {
@@ -391,6 +417,23 @@
             </p>
         </section>
     </details>
+
+    <div class="see-also">
+        <span class="cta-title">Outils &rightarrow;</span>
+        <a class="cta" href="https://nosretraites-simulateur-cas-types.netlify.app/">
+            Simuler les effets sur ma retraite
+        </a>
+        <a class="cta"
+            href="https://www.change.org/p/retraites-non-%C3%A0-cette-r%C3%A9forme-injuste-et-brutale-reformesdesretraites">
+            Signer la pétition des syndicats
+        </a>
+        <a class="cta" href="https://www.compteurdegreve.fr/">
+            Faire +1 sur le compteur de grève
+        </a>
+        <a class="cta" href="https://www.caisse-solidarite.fr/">
+            Donner à une caisse de solidarité
+        </a>
+    </div>
 
     <footer>
         <p>
